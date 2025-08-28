@@ -1,0 +1,35 @@
+{
+    "compilerOptions": {
+        "experimentalDecorators": true,
+        "module": "amd",
+        "moduleResolution": "node",
+        "noImplicitAny": true,
+        "noImplicitThis": true,
+        "strict": true,
+        "target": "es5",
+        "outDir": "dist/",
+        "jsx": "react",
+        "paths": {
+            "react": [ 
+                "./node_modules/@types/react" 
+            ]
+        },
+        "lib": [
+          "es5",
+          "es6",
+          "dom",
+          "es2015.promise"
+        ],
+        "types": [
+            "react",
+            "node"
+        ],
+        "esModuleInterop": true,
+        "resolveJsonModule": true
+    },
+    "exclude": [ "dist", "src" ],
+    "include": [
+        "examples/**/*.tsx",
+        "packages/orm-vsts-adapter/src/**/*.ts"
+    ]
+}

@@ -1,0 +1,38 @@
+{
+    "manifestVersion": 1,
+    "version": "0.1.0",
+    "id": "mrlm-vsts-examples",
+    "publisher": "mrlm-net",
+    "name": "MRLM/VSTS Examples",
+    "description": "MRLM/VSTS Examples extension.",
+    "categories": [
+        "Azure Repos",
+        "Azure Boards",
+        "Azure Pipelines",
+        "Azure Test Plans",
+        "Azure Artifacts"
+    ],
+    "targets": [{
+        "id": "Microsoft.VisualStudio.Services"
+    }],
+    "scopes": [
+        "vso.build_execute",
+        "vso.graph",
+        "vso.identity",
+        "vso.profile",
+        "vso.project",
+        "vso.serviceendpoint_query"
+    ],
+    "icons": {
+        "default": "static/icon.png"
+    },
+    "content": {
+    },
+    "files": [{
+        "path": "static",
+        "addressable": true
+    }, {
+        "path": "dist",
+        "addressable": true
+    }]
+}
