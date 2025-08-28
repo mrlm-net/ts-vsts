@@ -1,0 +1,14 @@
+{
+    "contributions": [{
+        "id": "organization-settings-hub-group",
+        "type": "ms.vss-web.hub",
+        "targets": [
+            "ms.vss-web.collection-admin-hub-group"
+        ],
+        "properties": {
+            "uri": "vsts-extension/OrganizationSettings/OrganizationSettings.html",
+            "name": "Organization Settings",
+            "iconName": "Settings"
+        }
+    }] 
+}

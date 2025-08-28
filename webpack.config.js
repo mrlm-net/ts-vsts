@@ -65,22 +65,24 @@ module.exports = () => ({
            ]
         })
     ],  ...{
-            devtool: 'inline-source-map',
-            devServer: {
-                server: "https",
-                port: DEFAULT_PORT,
+        devtool: 'inline-source-map',
+        devServer: {
+            server: "https",
+            port: DEFAULT_PORT,
+            historyApiFallback: {
+                index: '/static/index.html'
+            },
             static: {
                 serveIndex: false,
                 directory: DEFAULT_STATIC_DIR,
                 publicPath: `/${DEFAULT_STATIC_DIR}`
             },
             proxy: [{
-                    context: [`/${DEFAULT_DIST_DIR}`],
-                    secure: false,
-                    target: `${DEFAULT_PROTOCOL}://${DEFAULT_HOST}:${DEFAULT_PORT}`,
-                    pathRewrite: { [`/${DEFAULT_DIST_DIR}`]: "" }
-                },
-            ]
+                context: [`/${DEFAULT_DIST_DIR}`],
+                secure: false,
+                target: `${DEFAULT_PROTOCOL}://${DEFAULT_HOST}:${DEFAULT_PORT}`,
+                pathRewrite: { [`/${DEFAULT_DIST_DIR}`]: "" }
+            }]
         }
     }
 });

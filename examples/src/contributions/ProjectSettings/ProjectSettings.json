@@ -1,0 +1,14 @@
+{
+    "contributions": [{
+        "id": "project-settings-hub-group",
+        "type": "ms.vss-web.hub",
+        "targets": [
+            "ms.vss-web.project-admin-hub-group"
+        ],
+        "properties": {
+            "uri": "vsts-extension/ProjectSettings/ProjectSettings.html",
+            "name": "Project Settings",
+            "iconName": "Settings"
+        }
+    }] 
+}
